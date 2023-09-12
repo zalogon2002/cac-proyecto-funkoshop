@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDIT | FunkoShop</title>
+</head>
+<body>
+    <header>
+        <nav>
+          <picture>
+            <a href="/index.html">
+              <img
+                src="/img/branding/logo_light_horizontal.svg"
+                alt="logotipo Funkoshop"
+              />
+            </a>
+          </picture>
+          <ul>
+            <li>
+              <a href="/pages/shop/shop.html">Ver Tienda</a>
+            </li>
+            <li>
+              <a href="/pages/admin/admin.html">Admin.</a>
+            </li>
+            <li>
+              <a href="/index.html">Salir</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <h2>EDITAR ITEM</h2>
+        <form action="" method="post" enctype="application/x-www-form-urlencoded">
+            <div>
+                <label for="categoria">Categoría</label>
+                    <select name="categoria" id="categoria">
+                        <option value="">Seleccionar</option>
+                        <option value="op1">Opción 1</option>
+                        <option value="op2">Opción 2</option>
+                        <option value="op3">Opción 3</option>
+                    </select>
+
+                <label for="licencia">Licencia</label>
+                    <select name="licencia" id="licencia">
+                        <option value="">Seleccionar</option>
+                        <option value="licencia-op1">Opción 1</option>
+                        <option value="licencia-op2">Opción 2</option>
+                        <option value="licencia-op3">Opción 3</option>
+                    </select>
+            </div>
+            <div>
+                <label for="producto">Nombre del producto:</label>
+                <input type="text" placeholder="BABY YODA BLUEBALL">
+            </div>
+            
+            <div>
+                <label for="mensaje"></label>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, edición limitada.  "></textarea>
+            </div>
+            <div>
+                <label for="sku">SKU:</label>
+                <input type="text" name="sku" id="sku" placeholder="NAR001012">
+                <label for="precio">Precio:</label>
+                <input type="text" name="precio" id="precio" placeholder="$ 1.799,00">
+                <label for="stock">Stock:</label>
+                <input type="number" name="stock" id="stock" placeholder="10">
+            </div>
+            <div>
+                <label for="descuento">Descuento:</label>
+                <input type="number" name="descuento" id="descuento" placeholder="10%">
+                <label for="cuotas">Cuotas</label>
+                    <select name="cuotas" id="cuotas">
+                        <option value="tres-cuotas">3 cuotas</option>
+                        <option value="seis-cuotas">6 cuotas</option>
+                        <option value="doce-cuotas">12 cuotas</option>
+                    </select>                
+            </div>
+            <div>
+                <label for="imagenes">Imágenes:</label>
+                <input type="file" name="imagenes" id="imagenes" placeholder="Elegir archivos">
+            </div>
+            <div>
+                <img src="/img/star-wars/baby-yoda-1.webp" alt="baby-yoda">
+                <p>FRENTE</p>
+                <img src="/img/pokemon/pikachu-box.webp" alt="caja-baby-yoda">
+                <p>DORSO</p>
+            </div>
+            <div>
+                <button type="submit">Modificar Producto</button>
+                
+            </div>
+        </form>
+      </main>
+      <footer>
+        <section>
+          <nav>
+            <ul>
+              <li>
+                <a href="/pages/shop/shop.html">SHOP</a>
+              </li>
+              <li>
+                <a href="/pages/admin/register.html">REGISTRARSE</a>
+              </li>
+              <li>
+                <a href="pages/admin/login.html">INGRESAR</a>
+              </li>
+              <li>
+                <a href="/pages/contacto.html">CONTACTO</a>
+              </li>
+            </ul>
+            <picture>
+              <img src="/img/branding/isotype.svg" alt="Isotipo de FunkoShop" />
+            </picture>
+          </nav>
+        </section>
+        <p>All rights reserved 2023 - Funkoshop &copy;</p>
+      </footer>
+    
+</body>
+</html>
