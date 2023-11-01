@@ -523,7 +523,391 @@ aside input[type="checkbox"] {
 
 /* .agregarCarrito, .min-max  */
 input[type="text"] {
-  text-align: center;
+  text-align: left;
 }
 
 /*  CARRITO  */
+
+/*  Estilos Create  */
+
+/*.main-create input[type="text"]{
+  text-align: left;
+    
+}*/
+
+.create {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+       
+}
+
+
+.create_tittle {
+  font-family: var(--alternative-font);
+  font-size: var(--font-large);
+  color: var(--dark-solid);
+  
+}
+
+.categoria_licencia {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-20);
+  justify-self:flex-start;
+  
+}
+
+.categoria_licencia label {
+  font-family: var(--alternative-font);
+  font-size: var(--font-small);
+  color: var(--dark-bg-solid);
+}
+
+.categoria_licencia select {
+  font-family: var(--alternative-font);
+  font-size: var(--font-xxsmall);
+  color: var(--dark-bg-solid);
+}
+
+.categoria_licencia option {
+  font-family: var(--alternative-font);
+  font-size: var(--font-xxsmall);
+  color: var(--dark-bg-solid);
+
+}
+
+.nombre_producto {
+  display: flex;
+  align-items: center;  
+  gap: var(--spacing-12);
+  
+}
+
+.nombre_producto label {
+  font-family: var(--alternative-font);
+  font-size: var(--font-small);
+  color: var(--dark-bg-solid);
+}
+
+.nombre_producto input {
+  border: 2px solid var(--primary-solid);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0px;
+  font-family: var(--alternative-font);
+  font-size: var(--font-xxsmall);
+  color: var(--dark-bg-solid);
+}
+
+.descripcion_producto {
+  display: flex;
+  width: 827.632px;
+  height: 194.833px;
+  flex-direction: column;
+}
+
+.descripcion_producto_text {
+  font-family: var(--alternative-font);
+  font-size: var(--font-xxsmall);
+  color: var(--dark-bg-solid);
+  padding: var(--spacing-8);  
+}
+
+.sku_precio_stock {
+  display: flex;
+  align-items: baseline;
+  gap: var(--spacing-12);
+}
+
+.sku_precio_stock label {
+  font-family: var(--alternative-font);
+  font-size: var(--font-small);
+  color: var(--dark-bg-solid);
+}
+
+.sku_precio_stock input {
+  border: 2px solid var(--primary-solid);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0px;
+  font-family: var(--alternative-font);
+  font-size: var(--font-xxsmall);
+  color: var(--dark-bg-solid);
+}
+
+.descuento_cuotas {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-12)
+}
+
+.descuento_cuotas label {
+  font-family: var(--alternative-font);
+  font-size: var(--font-small);
+  color: var(--dark-bg-solid);
+}
+
+.descuento_cuotas input {
+  border: 2px solid var(--primary-solid);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0px;
+  font-family: var(--alternative-font);
+  font-size: var(--font-xxsmall);
+  color: var(--dark-bg-solid);
+}
+
+.carga_imagenes {
+  display:  flex;
+  align-items: center;
+  gap: var(--spacing-12);
+  align-items: baseline;
+}
+
+.carga_imagenes label {
+  font-family: var(--alternative-font);
+  font-size: var(--font-small);
+  color: var(--dark-bg-solid);
+}
+
+.carga_imagenes input {
+  font-family: var(--alternative-font);
+  font-size: var(--font-xxsmall);
+  color: var(--dark-bg-solid);
+  border: none;
+}
+
+
+.botones_ingreso {
+  display: flex;
+  gap: var(--spacing-36);
+  margin-top: var(--spacing-28);
+}
+
+.botones_ingreso_agregar{
+  background: var(--primary-solid);
+  border: none;
+  width: 175px;
+  height: 44.334px;
+  flex-shrink: 0;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.botones_ingreso_limpiar{
+  background: var(--primary-solid);
+  border: none;
+  width: 175px;
+  height: 44.334px;
+  flex-shrink: 0;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+}
+
+/* EDIT STYLES */
+
+
+.edit {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  
+}
+
+.edit__tittle {
+  font-family: var(--alternative-font);
+  font-size: var(--font-large);
+  color: var(--dark-solid);
+}
+
+.categoria__licencia__edit{
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-20);
+  justify-self:flex-start;
+}
+
+.categoria__licencia__edit label {
+  font-family: var(--alternative-font);
+  font-size: var(--font-small);
+  color: var(--dark-bg-solid);
+}
+
+.categoria__licencia__edit select {
+  font-family: var(--alternative-font);
+  font-size: var(--font-xxsmall);
+  color: var(--dark-bg-solid);
+}
+
+.categoria__licencia__edit option {
+  font-family: var(--alternative-font);
+  font-size: var(--font-xxsmall);
+  color: var(--dark-bg-solid);
+
+}
+
+
+.nombre__producto__edit {
+  display: flex;
+  align-items: center;  
+  gap: var(--spacing-12);
+}
+
+.nombre__producto__edit label {
+  font-family: var(--alternative-font);
+  font-size: var(--font-small);
+  color: var(--dark-bg-solid);
+}
+
+.nombre__producto__edit input{
+  border: 2px solid var(--primary-solid);
+  width: 295px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0px;
+  font-family: var(--alternative-font);
+  font-size: var(--font-xxsmall);
+  color: var(--dark-bg-solid);
+}
+
+.descripcion__producto__edit{
+  display: flex;
+  width: 827.632px;
+  height: 194.833px;
+  flex-direction: column;
+   
+}
+
+.descripcion__producto__edit__text {
+  font-family: var(--alternative-font);
+  font-size: var(--font-xxsmall);
+  color: var(--dark-bg-solid);
+  padding: var(--spacing-8);
+}
+
+.sku__precio__stock__edit{
+  display: flex;
+  align-items: baseline;
+  gap: var(--spacing-12);
+}
+
+.sku__precio__stock__edit label{
+  font-family: var(--alternative-font);
+  font-size: var(--font-small);
+  color: var(--dark-bg-solid);
+}
+
+.sku__precio__stock__edit input{
+  border: 2px solid var(--primary-solid);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0px;
+  font-family: var(--alternative-font);
+  font-size: var(--font-xxsmall);
+  color: var(--dark-bg-solid);
+}
+
+.descuento__cuotas__edit{
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-12)
+}
+
+.descuento__cuotas__edit label{
+  font-family: var(--alternative-font);
+  font-size: var(--font-small);
+  color: var(--dark-bg-solid);
+}
+
+.descuento__cuotas__edit input{
+  border: 2px solid var(--primary-solid);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0px;
+  font-family: var(--alternative-font);
+  font-size: var(--font-xxsmall);
+  color: var(--dark-bg-solid);
+}
+
+.carga__imagenes__edit{
+  display:  flex;
+  align-items: center;
+  gap: var(--spacing-12);
+  align-items: baseline;
+}
+
+.carga__imagenes__edit label{
+  font-family: var(--alternative-font);
+  font-size: var(--font-small);
+  color: var(--dark-bg-solid);
+}
+
+.carga__imagenes__edit input{
+  font-family: var(--alternative-font);
+  font-size: var(--font-xxsmall);
+  color: var(--dark-bg-solid);
+  border: none;
+}
+
+
+.frente__dorso{
+  display: flex;
+  gap: var(--spacing-24);  
+}
+
+.frente__dorso__content{
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-24);
+  align-items: center;
+}
+
+.frente__dorso img{
+  width: 150px;
+  height: 150px;
+  flex-shrink: 0;
+  border-bottom: 2px solid var(--primary-solid);
+}
+
+.frente__dorso__tittle {
+  font-family: var(--alternative-font);
+  font-size: var(--font-small);
+  color: var(--dark-solid);
+}
+
+.edit__boton{
+  display:block;
+  padding-top: 30px;
+ 
+}
+
+.edit__boton__modificar{
+  background: var(--primary-solid);
+  border: none;
+  width: 175px;
+  height: 44.334px;
+  flex-shrink: 0;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  
+}
