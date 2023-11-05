@@ -991,3 +991,33 @@ input[type="text"] {
   line-height: normal;
 }
 
+.admin-margin p {
+  font-family: var(--alternative-font);
+  font-size: var(--font-xlarge);
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  margin: var(--spacing-16);
+}
+
+.register-item-label {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-top: var(--spacing-16);
+}
+
+.terminos {
+  color: var(--secundary-solid);
+}
+
+#aceptar {
+  width: 16.275px;
+  height: 16.275px;
+  border-radius: 3px;
+  border: 2px solid var(--dark-solid);
+  text-align: right;
+  margin: var(--spacing-8);
+}
+
