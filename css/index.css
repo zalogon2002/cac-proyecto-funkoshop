@@ -305,7 +305,7 @@ header {
 
 /* ESTILOS FOOTER */
 footer {
-  background-color: var(--dark-bg-solid);
+  background-color: var(--dark-solid);
   padding: var(--spacing-68);
 }
 
@@ -530,15 +530,15 @@ input[type="text"] {
 
 /*  Estilos Create  */
 
-/*.main-create input[type="text"]{
+.main-create input[type="text"]{
   text-align: left;
     
-}*/
+}
 
 .create {
   margin-top: 30px;
   margin-bottom: 30px;
-  display: flex;
+  /*display: flex;*/
        
 }
 
@@ -910,4 +910,94 @@ input[type="text"] {
   font-weight: 600;
   line-height: normal;
   
+}
+
+/* ADMIN STYLES*/
+
+.admin__search{
+  margin-top: 36px;
+  margin-bottom: 36px;
+  gap: var(--spacing-20);
+  display: flex;
+  
+}
+
+.admin__search img{
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+}
+
+.admin__search input{
+  width: 529.765px;
+  height: 44.285px;
+  flex-shrink: 0;
+}
+
+.agregar {
+  width: 1126px;
+  height: 928.948px;
+  margin: 0;  
+}
+
+.agregar__listado{
+  display: flex;
+  align-items: center;
+  padding-right: 94px;
+  margin: 36px auto;  
+  justify-content: space-between;
+}
+
+.agregar__listado__tittle{
+  font-family: var(--alternative-font);
+  font-size: var(--font-large);  
+}
+
+.agregar__boton{
+  display: flex;
+  gap: var(--spacing-20);  
+}
+
+.agregar__boton__tittle{
+  font-family: var(--alternative-font);
+  font-size: var(--font-medium);
+  font-weight: 700;
+  
+}
+
+.agregar__tabla{
+  width: 1093.768px;
+  height: 844.448px;
+  
+}
+
+.agregar__tabla th{
+  font-family: var(--alternative-font);
+  font-size: var(--font-medium);
+  margin-left: 0;
+  justify-content: space-between;
+  font-weight: 700;
+}
+
+.agregar__tabla td{
+  font-family: var(--alternative-font);
+  font-size: var(--font-medium);
+  font-weight: 400;
+  vertical-align: top;
+  padding-top: 24px;
+  padding-left: 8px;
+  justify-content: space-between;
+
+}
+
+.agregar__tabla__lapiz{
+  width: 32px;
+  height: 33px;
+  flex-shrink: 0;
+}
+
+.agregar__tabla__tacho{
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
 }

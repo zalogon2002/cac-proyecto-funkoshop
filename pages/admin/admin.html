@@ -3,92 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin | Funkshop</title>
+    <title>ADMIN | Funkshop</title>
+    <link rel="stylesheet" href="../../css/index.css">
 </head>
 <body>
     <header> 
-        <nav>
-          <picture>
-            <a href="/index.html">
+        <nav class="navbar container">
+          <picture class="navbar__logo">
+            <a href="../../index.html">
               <img src="/img/branding/logo_light_horizontal.svg" alt="logotipo Funkoshop"/>
             </a>
           </picture>
-          <ul>
-            <li>
-              <a href="/pages/shop/shop.html">SHOP</a>
+          <ul class="navbar__menu">
+            <li class="navbar__item">
+              <a class="navbar__link" href="/pages/shop/shop.html">SHOP</a>
             </li>
-            <li>
-              <a href="/pages/admin/admin.html">ADMIN</a>
+            <li class="navbar__item">
+              <a class="navbar__link" href="/pages/admin/admin.html">ADMIN</a>
             </li>
-            <li>
-              <a href="/index.html">SALIR</a>
+            <li class="navbar__item">
+              <a class="navbar__link" href="/index.html">SALIR</a>
             </li>
-            <li>
-              <a href="/pages/shop/carrito.html">
+            <li class="navbar__item">
+              <a class="navbar__link" href="/pages/shop/carrito.html">
                 <img src="/img/icons/cart-icon.svg" alt="carrito" />
               </a>
             </li>
           </ul>
         </nav>
       </header>
-      <main>
-        <div>
-            <img src="/img/icons/search_icon.svg" alt="buscar-producto">
-            <input type="search" name="buscar" id="buscar">
-        </div>
-        <div>
-            <h2>LISTADO DE PRODUCTOS</h2>
-        </div>
-        <div>
-            <p>AGREGAR</p>                    
-        </div>
-        <table>
+      <main class="admin-container">
+        <div class="admin container">
+          <div class="admin__search container">
+              <img src="/img/icons/search_icon.svg" alt="buscar-producto">
+              <input type="search" name="buscar" id="buscar">
+          </div>
+        <div class="agregar container">
+          <section class="agregar__listado">
+            <h2 class="agregar__listado__tittle">LISTADO DE PRODUCTOS</h2>
+            <div class="agregar__boton">       
+              <p class="agregar__boton__tittle">AGREGAR</p>
+              <button class="agregar__boton__dibujo">+</button>
+            </div>
+          </section>                
+          <table class="agregar__tabla">
             <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Código</th>
-                    <th>Nombre del Producto</th>
-                    <th>Categoría</th>
-                </tr>
+              <tr>
+                  <th>ID</th>
+                  <th>Código</th>
+                  <th>Nombre del Producto</th>
+                  <th>Categoría</th>
+              </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>STW001001</td>
-                    <td>Baby Yoda Blueball</td>
-                    <td>STAR WARS</td>
-                    <td><a href="/pages/admin/edit.html">
-                        <img src="/img/icons/edit_pencil.svg" alt="editar-producto">
-                    </a></td>
-                    <td><img src="/img/icons/delete_trash.svg" alt="borrar-producto"></td>
-                </tr>
+              <tr>
+                <td>1</td>
+                <td>STW001001</td>
+                <td>Baby Yoda Blueball</td>
+                <td>STAR WARS</td>
+                <td><a href="/pages/admin/edit.html">
+                    <img class="agregar__tabla__lapiz" src="/img/icons/edit_pencil.svg" alt="editar-producto">
+                </a></td>
+                <td><img class="agregar__tabla__tacho" src="/img/icons/delete_trash.svg" alt="borrar-producto"></td>
+              </tr>
             </tbody>
-        </table>
+          </table>
+        </div>
+        </div> 
       </main>
       <footer>
-        <section>
-          <nav>
-            <ul>
-              <li>
-                <a href="/pages/shop/shop.html">SHOP</a>
+          <nav class="navbar container">
+            <ul class="navbar__item">
+              <li class="navbar__item">
+                <a class="navbar__link" href="/pages/shop/shop.html">SHOP</a>
               </li>
-              <li>
-                <a href="/pages/admin/register.html">REGISTRARSE</a>
+              <li class="navbar__item">
+                <a class="navbar__link" href="/pages/admin/register.html">REGISTRARSE</a>
               </li>
-              <li>
-                <a href="/pages/admin/login.html">INGRESAR</a>
+              <li class="navbar__item">
+                <a class="navbar__link" href="/pages/admin/login.html">INGRESAR</a>
               </li>
-              <li>
-                <a href="/index.html">CONTACTO</a>
+              <li class="navbar__item">
+                <a class="navbar__link" href="/index.html">CONTACTO</a>
               </li>
             </ul>
             <picture>
-              <img src="/img/branding/isotype.svg" alt="Isotipo de FunkoShop" />
+              <img src="../../img/branding/isotype.svg" alt="Isotipo de FunkoShop" />
             </picture>
           </nav>
-        </section>
-        <p>All rights reserved 2023 - Funkoshop &copy;</p>
-      </footer>
-    
+        <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
+      </footer>    
 </body>
 </html>
