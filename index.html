@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inicio Funkoshop</title>
     <link rel="stylesheet" href="./css/index.css" />
+    <link rel="icon" type="image/x-icon" href="img/fav.png">
+    <!-- Required Core Stylesheet -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
+
+<!-- Optional Theme Stylesheet -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
   </head>
   <body>
     <header>
@@ -35,13 +41,44 @@
         </ul>
       </nav>
     </header>
-    <section class="hero">
-      <article class="hero__content container">
-        <h3 class="hero__title">Nuevos Ingresos</h3>
-        <p class="hero__text">Descubrí el próximo Funko Pop de tu colección.</p>
-        <a class="hero__link" href="./pages/shop/shop.html">SHOP</a>
-      </article>
-    </section>
+
+
+    <div class="glide">
+      <div class="glide__track" data-glide-el="track">
+        <ul class="glide__slides">
+          <li class="glide__slide">
+            <section class="hero">
+              <article class="hero__content container">
+                <h3 class="hero__title">Nuevos Ingresos</h3>
+                <p class="hero__text">Descubrí el próximo Funko Pop de tu colección.</p>
+                <a class="hero__link" href="./pages/shop/shop.html">SHOP</a>
+              </article>
+            </section>
+          </li>
+          <li class="glide__slide">
+            <section class="hero2">
+              <article class="hero__content container">
+                <h3 class="hero__title">Nuevos Ingresos</h3>
+                <p class="hero__text">Descubrí el próximo Funko Pop de tu colección.</p>
+                <a class="hero__link" href="./pages/shop/shop.html">SHOP</a>
+              </article>
+            </section>
+          </li>
+          <li class="glide__slide">
+            <section class="hero3">
+              <article class="hero__content container">
+                <h3 class="hero__title">Nuevos Ingresos</h3>
+                <p class="hero__text">Descubrí el próximo Funko Pop de tu colección.</p>
+                <a class="hero__link" href="./pages/shop/shop.html">SHOP</a>
+              </article>
+            </section>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+    
     <main class="main-container">
       <section class="coleccion container">
         <article class="coleccion__content">
@@ -181,5 +218,29 @@
       </nav>
       <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+
+   <script>
+new Glide('.glide',
+{
+type: 'carousel',
+autoplay: 4000,
+  animationDuration: 1500,
+startAt: 0,
+perView: 1,
+gap: 30,
+breakpoints: {
+991: {
+perView: 1
+},
+768: {
+perView: 1
+}
+}
+}
+).mount();
+</script>
+
   </body>
 </html>
