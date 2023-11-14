@@ -131,12 +131,20 @@ header {
 
 /* HERO */
 
-.hero {
+.hero, .hero2, .hero3 {
   background-image: url(../img/funkos-banner.webp);
   padding: var(--spacing-128);
   background-size: cover;
   background-attachment: fixed;
   background-position-x: center;
+}
+
+.hero2{
+  background-image: url(../img/ban1.png);
+}
+
+.hero3{
+  background-image: url(../img/ban2.jpg);
 }
 
 .hero__content {
@@ -1021,3 +1029,9 @@ input[type="text"] {
   margin: var(--spacing-8);
 }
 
+
+.glide__slide {
+  background: red;
+  border: 3px solid;
+  height: 150px;
+}
