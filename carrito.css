@@ -1,0 +1,1357 @@
+
+/* ESTILOS en el HEADER 1440 px*/
+header {
+    background-color: var(--dark-solid);
+    padding: var(--spacing-36);
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+
+  .navbar__logo {
+    max-width: 300px;
+  }
+  
+  .navbar__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-20);
+  }
+  
+  .navbar__link {
+    font-size: var(--font-medium);
+    padding: var(--spacing-8) var(--spacing-16);
+    display: inline-block;
+    transition: background 0.3s ease-in-out;
+  }
+
+  .navbar__link img {
+  width: 100%;
+  }
+  
+  
+  .navbar__link:hover {
+    background-color: var(--primary-900);
+  }
+
+
+  /* ESTILOS FOOTER 1440 px*/
+footer {
+    background-color: var(--dark-solid);
+    padding: var(--spacing-68);
+  }
+  
+  .footer__copy {
+    text-align: center;
+    margin-top: var(--spacing-36);
+  }
+  
+
+
+/*----------------------------------------------------------QUERIES Mobile First - 320px*/
+
+
+
+.navbar__menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+
+.navbar__link img {
+  width: 100%;
+  }
+  
+  .navbar__logo img {
+    .navbar__logo {
+      max-width: 300px;
+    }
+    
+  }
+  
+
+
+
+h1 {
+font-family: var(--alternative-font);
+text-align: center;
+margin-top: 1em;
+font-size: 23px;  /* 1440 = 46px---700---*/
+font-weight: 700;
+}
+
+h3 {
+    font-family: var(--base-font);
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;  /* 1440 = 24px---700---*/
+    }
+
+p {
+    font-family: var(--base-font);
+    text-align: center;
+    font-weight: 500;
+    font-size:14px;  /* 1440 = 14px---500---*/
+    margin-bottom: 1em;
+} 
+        
+    
+
+
+.titulo_primero{
+margin: 2em 0 1.4em 0;
+font-family: var(--base-font);
+text-align: center;
+}
+
+
+.grilla-articulo-uno{
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 10% 35% 15% 5% 10% 5% 5% 15%;
+background-color:var(--light-bg-solid);
+width: 100%;
+border: .2em solid var(--dark-150);
+border-radius: 12px;
+align-items: center;
+justify-items: center;
+margin: 1.5em 0 1.5em 0;
+row-gap: .5em;
+grid-template-areas: 
+"titulo-detalle"
+"munieco"
+"texto-munieco"
+"titulo-cantidad"
+"formulario-cart"
+"titulo-total"
+"precio"
+"equis";
+}
+
+.titulo-uno{
+grid-area: titulo-detalle;
+width: 90%;
+border: .2em solid var(--dark-150);
+border-radius: 4px;
+background-color: #FAFAFF;
+margin: 1em 0 0 0 ;
+padding: .1em;
+text-align: center;
+align-self: center;
+font-size: 8px;
+font-weight: 700;
+font-family: var(--base-font);
+}
+
+
+
+.titulo-dos{
+grid-area: titulo-cantidad;
+width: 90%;
+border: .2em solid var(--dark-150);
+border-radius: 4px;
+background-color: #FAFAFF;
+margin: 2em 0 .6em 0;
+padding: .1em;
+text-align: center;
+font-size: 8px;
+font-weight: 700;
+font-family: var(--base-font);
+}
+
+
+.titulo-tres{
+grid-area: titulo-total;
+width: 90%;
+border: .2em solid var(--dark-150);
+border-radius: 4px;
+background-color: #FAFAFF;
+margin: 2em 0 1em 0;
+padding: .1em;
+text-align: center;
+font-size: 8px;
+font-weight: 700;
+font-family: var(--base-font);
+}
+
+
+
+.yodita{
+width: 80%;
+position: relative;
+left: 1.2em;
+margin-top: .6em;
+}
+
+
+.pidgeotto{
+    width: 70%;
+    position: relative;
+    left: 4.8em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    }
+
+.textos-yodita{
+    display: flex;
+    flex-direction: column;
+align-items: center;
+font-size: 130%;
+margin-top: 1em;
+}
+
+.textos-yodita h3{
+    font-size: 150%;
+    }
+    
+    
+    
+
+.textos-yodita p{
+margin-top: .6em;
+}
+
+
+
+
+
+.equis{
+grid-area: equis;
+width: 11%;
+height: 36%;
+color: #FF3333;
+border: 3px solid #FF3333;
+border-radius: 50%;
+position: relative;
+bottom: 2.4em;
+}
+
+.equis h1{
+position: relative;
+bottom: 1.03em;
+    }
+    
+
+.precio-final{
+text-align: center;
+}
+
+
+.formulario-cart{
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+row-gap: 0;
+column-gap: 1em;
+align-self: center;
+margin-top: -0.8em;
+position: relative;
+left: 1.6em
+}
+
+.numerito{
+background-color: #ffffff;
+border: .2em solid var(--dark-150);
+grid-row-start: 1;
+grid-row-end: -1;
+width: 500%;
+text-align: center;
+padding-top: .5em;
+position: relative;
+left: -3.3em
+}
+
+.flecha-abajo{
+color: #FAFAFF;
+grid-column-end: -1;
+background-color:#FF3333;
+width: 100%;
+margin-top: .1em;
+text-align: center;
+}
+
+.flecha-arriba{
+color: #FAFAFF;
+grid-column-end: -1;
+background-color:#FF3333;
+width: 100%;
+margin-bottom: .1em;
+text-align: center;
+}
+
+
+.titulo-principal-final{
+display: grid;
+margin: 1em 0 1.3em 0;
+justify-items: center;
+}
+
+
+.linea-roja-final{
+width: 36%;
+height: 4px;
+justify-items: center;
+background-color: #FF3333;
+position: relative;
+top: .3em;
+}
+
+
+.cuadro-resumen{
+width: 100%;
+display: grid;
+justify-self: center;
+grid-template-columns: 50% 50%;
+background-color:var(--light-bg-solid);
+border: .2em solid var(--dark-150);
+border-radius: 12px;
+margin: 0 0 1em 0;
+padding: 1em 1em 1.6em 1em;
+}
+
+
+.izquierda{
+    grid-template-rows: 20% 20% 20% 40%;
+    display: grid;
+justify-items: start;
+    row-gap:.6em;
+    align-items: center;
+    } 
+
+    .izquierda h3{
+        margin-left:.03em;
+    } 
+
+
+    .derecha{
+        grid-template-rows: 20% 20% 20% 40%;
+        display: grid;
+        justify-items: end;
+        row-gap:.6em;
+        align-items: center;
+        } 
+
+/* 
+.textos-derecha {
+text-align: right;
+margin-right: 1em;
+} */
+
+.linea-roja-cuadro{
+display: grid;
+width: 200%;
+height: 3px;
+background-color: #FF3333;
+position: relative;
+bottom: 1.1em;
+}
+
+
+.boton-pagar{
+width: 100%;
+height: 2.5em;
+color: #FAFAFF;
+background-color: #FF3333;
+margin: 0.5em 0 3em 0 ;
+text-align: center;
+padding-top: .6em;
+position: relative;
+}  
+
+
+h3 {
+margin-left: -0.3em;
+}
+
+.numerito-compra{
+width: 7%;
+color: #FAFAFF;
+background-color: #FF3333;
+border-radius: 50%;
+font-size: 50%;
+text-align: center;
+position: relative;
+left: 10em;
+top: .8em;
+padding-bottom: .3em;
+}
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------QUERIES Tablet - 768px*/
+
+@media (min-width: 768px){
+.cuerpo{
+width: 76%;
+}
+
+.navbar__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--spacing-8);
+}
+
+
+.navbar__link img {
+  width: 100%;
+  }
+  
+
+h1 {
+  font-family: var(--alternative-font);
+  text-align: center;
+  margin-top: 1em;
+  font-size: 34px;  /* 1440 = 46px---700---*/
+  font-weight: 700;
+  }
+  
+  h3 {
+      font-family: var(--base-font);
+      text-align: center;
+      font-weight: 700;
+      font-size: 18px;  /* 1440 = 24px---700---*/
+      margin-top: .1em;
+      }
+  
+  p {
+      font-family: var(--base-font);
+      text-align: center;
+      font-weight: 700;
+      font-size:24px;  /* 1440 = 14px---500---*/
+      margin-top: 1.5em;
+  } 
+          
+      
+
+  
+
+.titulo-primero{
+margin: 2em 0 0.4em -1em;
+position: relative;
+left: -5.2em;
+}
+
+
+.linea-roja-inicial{
+  width: 48%;
+  height: 6px;
+  background-color: #FF3333;
+  position: relative;
+  left: .8em;
+  bottom: 1em;
+  margin: 0 0 1em 0;
+  }
+  
+  
+
+.grilla-articulo-uno {
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 8% 44% 8% 5% 8% 5% 30%;
+background-color:var(--light-bg-solid);
+width: 100%;
+max-height: 680px;
+border: .2em solid var(--dark-150);
+border-radius: 12px;
+align-items: center;
+justify-items: center;
+/* margin: 2em 0 2em 2.2em; */
+margin: 1.5em 0 3em 0;
+row-gap: .5em;
+grid-template-areas: 
+"titulo-detalle titulo-detalle"
+"munieco descripcion"
+"titulo-cantidad titulo-cantidad"
+"formulari-cart formulario-cart"
+"titulo-total titulo-total"
+"precio precio"
+"equis equis";
+}
+
+.titulo-uno{
+grid-area: titulo-detalle;
+width: 90%;
+height: 3em;
+grid-column-end: -1;
+border: .2em solid var(--dark-150);
+border-radius: 8px;
+background-color: #FAFAFF;
+margin: 2em 0 0 0 ;
+text-align: center;
+font-size: 12px;
+align-self: center;
+position: relative;
+}
+
+
+  
+
+.titulo-dos{
+grid-area: titulo-cantidad;
+width: 90%;
+height: 3em;
+border: .2em solid var(--dark-150);
+border-radius: 8px;
+background-color: #FAFAFF;
+margin: 2em 0 .6em 0;
+padding: .2em;
+text-align: center;
+font-size: 12px;
+}
+
+.titulo-tres{
+grid-area: titulo-total;
+width: 90%;
+height: 3em;
+border: .2em solid var(--dark-150);
+border-radius: 8px;
+background-color: #FAFAFF;
+margin: 2em 0 1em 0;
+padding: .2em;
+text-align: center;
+font-size: 12px;
+}
+
+.yodita{
+width: 100%;
+position: relative;
+left: 1em;
+margin-top: 3em;
+margin-left: 2em;
+}
+
+.pidgeotto{
+  width: 94%;
+  position: relative;
+  left: 6em;
+  margin-top: 3em;
+  margin-bottom: 1em;
+  }
+
+.textos-yodita{
+font-size: 135%;
+margin-left: -8em;
+margin-top: 4em;
+
+}
+
+.textos-yodita p{
+font-size: 120%;
+font-weight: 500;
+margin-left: -.3em;
+}
+
+
+.equis{
+grid-area: equis;
+width: 6%;
+height: 22%;
+color: #FF3333;
+border: 3.4px solid #FF3333;
+border-radius: 50%;
+text-align: center;
+margin-top: 3em;
+position: relative;
+bottom: 7em;
+}
+
+
+
+.equis h1{
+  position: relative;
+  bottom: 1.1em;
+      }
+      
+  
+
+
+.precio-final{
+grid-area: precio;
+text-align: center;
+position: relative;
+}
+
+.formulario-cart{
+display: grid;
+grid-area: formulario-cart;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+row-gap: 0;
+column-gap: 2.2em;
+align-self: center;
+margin-top: -0.8m;
+position: relative;
+bottom: -1em;
+left: -17.6em;
+}
+
+.numerito{
+background-color: #ffffff;
+border: .2em solid var(--dark-150);
+grid-row-start: 1;
+grid-row-end: -1;
+width: 600%;
+text-align: center;
+padding-top: .5em;
+position: relative;
+left: -3.3em
+}
+
+.flecha-abajo{
+color: #FAFAFF;
+grid-column-end: -1;
+background-color:#FF3333;
+width: 140%;
+margin-top: .1em;
+text-align: center;
+}
+
+.flecha-arriba{
+color: #FAFAFF;
+grid-column-end: -1;
+background-color:#FF3333;
+width: 140%;
+margin-bottom: .1em;
+text-align: center;
+}
+
+.titulo-principal-final{
+font-size: 1.5em;
+position: relative;
+left: 20em;
+}
+
+
+.linea-roja-final{
+width: 22%;
+height: 6px;
+margin-left: -0.4em;
+background-color: #FF3333;
+}
+
+
+.cuadro-resumen{
+  width: 60%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background-color:var(--light-bg-solid);
+  border: .2em solid var(--dark-150);
+  border-radius: 12px;
+  margin: 0 0 1em 0;
+  padding: 1em 1em 1.6em 1em;
+  position: relative;
+  left: 30.6em;
+  }
+  
+  
+  .izquierda{
+  grid-template-rows: 20% 20% 20% 40%;
+  display: grid;
+  justify-items: start;
+  row-gap:.8em;
+  align-items: center;
+  } 
+  
+  .izquierda h3{
+  margin-left:.03em;
+  } 
+  
+.derecha{
+          grid-template-rows: 20% 20% 20% 40%;
+          display: grid;
+          justify-items: end;
+          row-gap:.6em;
+          align-items: center;
+          } 
+
+.linea-roja-cuadro{
+  width: 100%;
+grid-column-start: 1;
+grid-column-end: -1;
+height: 3px;
+background-color: #FF3333;
+}
+
+
+.boton-pagar{
+width: 60%;
+height: 2.5em;
+color: #FAFAFF;
+background-color: #FF3333;
+margin-bottom: 3em;
+text-align: center;
+position: relative;
+left: 30.5em;
+padding-top: .6em;
+}  
+
+
+
+h3 {
+margin-left: -0.3em;
+}
+
+.numerito-compra{
+width: 4%;
+color: #FAFAFF;
+background-color: #FF3333;
+border-radius: 50%;
+font-size: 50%;
+text-align: center;
+position: relative;
+left: 10em;
+top: .8em;
+padding-bottom: .3em;
+}
+}
+
+
+
+/*-----...................-------------QUERIES Desktop - 1440px*/
+
+@media (min-width: 1440px){  
+
+
+.titulo-primero{
+margin: 2em 0 0.2em 0;
+font-size: 46px; 
+position: relative;
+left: -8.6em;
+}
+
+
+.linea-roja-inicial{
+width: 35%;
+height: 6px;
+background-color: #FF3333;
+position: relative;
+left: 7.6em;
+margin: 0 0 8em 0;
+}
+
+
+.grilla-articulo-uno {
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+background-color:var(--light-bg-solid);
+width: 90%;
+max-height: 220px;
+border: .2em solid var(--dark-150);
+border-radius: 12px;
+align-items: center;
+justify-items: center;
+margin: 6em 0 7em 7em;
+}
+
+.titulo-uno{
+grid-column-start: 1;
+grid-column-end: 4;
+width: 167%;
+height: 3em;
+border: .14em solid var(--dark-150);
+border-radius: 10px;
+background-color: #FAFAFF;
+margin: -1em 0 1.8em 0 ;
+padding: .3em;
+text-align: center;
+align-self: center;
+font-size: 1.3em;
+position: relative;
+top:-2em;
+left:20em;
+text-align: left;
+}
+
+.titulo-uno h3{ 
+  position: relative;
+  left:-26em; 
+  top:.1em;
+}
+
+
+
+.titulo-dos{
+height: 2em;
+background-color: var(--dark-000);
+border: .14em solid var(--dark-000);
+border-radius: 0px;
+text-align: center;
+font-size: 1.3em;
+position: relative;
+top:-13.6em;
+left:32em;
+
+}
+
+.titulo-tres{
+height: 2em;
+background-color: var(--dark-000);
+border: .14em solid var(--dark-000);
+text-align: center;
+font-size: 1.3em;
+position: relative;
+top:-16.5em;
+left:55em;
+}
+
+.yodita{
+width: 90%;
+position: relative;
+left: -48em;
+top:4.4em;
+margin-top: 12em;
+margin-left: -27em;
+}
+
+.pidgeotto{
+  width: 90%;
+  position: relative;
+  left: -46em;
+  top:4.4em;
+  margin-top: 12em;
+  margin-left: -27em;
+  }
+  
+
+
+.textos-yodita{
+grid-area: descripcion;
+align-items: start;
+font-size: 120%;
+position: relative;
+top:2em;
+left:7em;
+}
+
+
+.textos-yodita h3{
+  font-size: 190%;
+  }
+
+  .textos-yodita p{
+    font-size: 120%;
+    font-weight: 500;
+    }
+
+    
+.equis{
+grid-area: vacio-dos;
+grid-column-start: -1;
+grid-column-end: -2;
+width: 19%;
+height: 48%;
+color: #FF3333;
+border: 3px solid #FF3333;
+border-radius: 50%;
+position: relative;
+top:-23.4em;
+left:3em;
+}
+
+
+
+.equis h1{
+font-size: 30px;
+position: relative;
+bottom: 1em;
+}
+
+.precio-final{
+grid-area: precio;
+text-align: center;
+position: relative;
+bottom: 9em;
+left:72em;
+}
+
+
+
+.formulario-cart{
+display: grid;
+grid-area: formulario-cart;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+row-gap: 0;
+column-gap: 2.2em;
+align-self: center;
+margin-top: -0.8m;
+position: relative;
+bottom: 4.2em;
+left: 30em;
+}
+
+.numerito{
+background-color: #ffffff;
+border: .2em solid var(--dark-150);
+grid-row-start: 1;
+grid-row-end: -1;
+width: 600%;
+text-align: center;
+padding-top:.5em;
+position: relative;
+left: -3.3em
+}
+
+.flecha-abajo{
+color: #FAFAFF;
+grid-column-end: -1;
+background-color:#FF3333;
+width: 140%;
+margin-top: .1em;
+text-align: center;
+}
+
+.flecha-arriba{
+color: #FAFAFF;
+grid-column-end: -1;
+background-color:#FF3333;
+width: 140%;
+margin-bottom: .1em;
+text-align: center;
+}
+
+.titulo-principal-final{
+font-size: 1.5em;
+position: relative;
+left: 46em;
+}
+
+.titulo-principal-final h1{
+position: relative;
+right: 3.8em;
+bottom: .2em;
+  }
+
+
+
+.linea-roja-final{
+width: 12%;
+height: 6px;
+margin-left: .2em;
+background-color: #FF3333;
+position: relative;
+right: 8.6em;
+top:0;
+}
+
+
+.cuadro-resumen{
+display: grid;
+grid-template-columns: 50% 50%;
+width: 40%;
+background-color:var(--light-bg-solid);
+border: .2em solid var(--dark-150);
+border-radius: 12px;
+margin: 0 0 1em 0;
+padding: .5em 0 1em 1em;
+position: relative;
+left: 80.6em;
+row-gap:.6em;
+}
+
+.izquierda{
+  grid-template-rows: 20% 20% 20% 40%;
+  display: grid;
+  justify-items: start;
+  row-gap:1em;
+  align-items: center;
+  margin: 1em 2em 1em 2em;
+  } 
+  
+
+  
+.derecha{
+  grid-template-rows: 20% 20% 20% 40%;
+  display: grid;
+  justify-items: end;
+  row-gap:1em;
+  align-items: center;
+  margin: 1em 2em 1em 2em;
+  } 
+
+
+.linea-roja-cuadro{
+  width: 93%;
+grid-column-start: 1;
+grid-column-end: -1;
+height: 3px;
+background-color: #FF3333;
+position: relative;
+left: 2em;
+bottom: 2.2em;
+}
+    
+
+.boton-pagar{
+width: 40%;
+height: 2.5em;
+color: #FAFAFF;
+background-color: #FF3333;
+margin-bottom: 10em;
+text-align: center;
+position: relative;
+left: 80.6em;
+padding-top: .6em;
+}  
+
+
+
+h3 {
+margin-left: -0.3em;
+}
+
+.numerito-compra{
+width: 4%;
+color: #FAFAFF;
+background-color: #FF3333;
+border-radius: 50%;
+font-size: 50%;
+text-align: center;
+position: relative;
+left: 10em;
+top: .8em;
+padding-bottom: .3em;
+}
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /*-----...................-------------QUERIES Desktop - 1920px*/
+
+@media (min-width: 1920px){  
+
+
+  .titulo-primero{
+  margin: 2em 0 0.2em 0;
+  font-size: 46px; 
+  position: relative;
+  left: -13.8em;
+  }
+  
+  
+  .linea-roja-inicial{
+  width: 26.6%;
+  height: 6px;
+  background-color: #FF3333;
+  position: relative;
+  left: 7.6em;
+  margin: 0 0 8em 0;
+  }
+  
+  
+  .grilla-articulo-uno {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  background-color:var(--light-bg-solid);
+  width: 90%;
+  max-height: 220px;
+  border: .2em solid var(--dark-150);
+  border-radius: 12px;
+  align-items: center;
+  justify-items: center;
+  margin: 6em 0 7em 7em;
+  }
+  
+  .titulo-uno{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  width: 167%;
+  height: 3em;
+  border: .14em solid var(--dark-150);
+  border-radius: 10px;
+  background-color: #FAFAFF;
+  margin: -1em 0 1.8em 0 ;
+  padding: .3em;
+  text-align: center;
+  align-self: center;
+  font-size: 1.3em;
+  position: relative;
+  top:-2em;
+  left: 26.5em;
+  text-align: left;
+  }
+  
+  .titulo-uno h3{ 
+    position: relative;
+    left:-36.4em; 
+    top:.1em;
+  }
+  
+  
+  
+  .titulo-dos{
+  height: 2em;
+  background-color: var(--dark-000);
+  border: .14em solid var(--dark-000);
+  border-radius: 0px;
+  text-align: center;
+  font-size: 1.3em;
+  position: relative;
+  top:-13.6em;
+  left: 45em;
+  
+  }
+  
+  .titulo-tres{
+  height: 2em;
+  background-color: var(--dark-000);
+  border: .14em solid var(--dark-000);
+  text-align: center;
+  font-size: 1.3em;
+  position: relative;
+  top:-16.5em;
+  left:74em;
+  }
+  
+  .yodita{
+  width: 86%;
+  position: relative;
+  left: -70em;
+  top:4.4em;
+  margin-top: 12em;
+  margin-left: -29em;
+  }
+  
+  .pidgeotto{
+    width: 72%;
+    position: relative;
+    left: -69em;
+    top:4.4em;
+    margin-top: 12em;
+    margin-left: -26em;
+    }
+    
+  
+  
+  .textos-yodita{
+  grid-area: descripcion;
+  align-items: start;
+  font-size: 120%;
+  position: relative;
+  top:2em;
+  left:7em;
+  }
+  
+
+
+  .textos-yodita h3{
+    font-size: 190%;
+    }
+  
+    .textos-yodita p{
+      font-size: 120%;
+      font-weight: 500;
+      }
+  
+
+  
+      
+  .equis{
+  grid-area: vacio-dos;
+  grid-column-start: -1;
+  grid-column-end: -2;
+  width: 15%;
+  height: 48%;
+  color: #FF3333;
+  border: 3px solid #FF3333;
+  border-radius: 50%;
+  position: relative;
+  top:-23.4em;
+  left:3em;
+  }
+  
+  
+  
+  .equis h1{
+  font-size: 30px;
+  position: relative;
+  bottom: 1em;
+  }
+  
+  .precio-final{
+  grid-area: precio;
+  text-align: center;
+  position: relative;
+  bottom: 9em;
+  left:96em;
+  }
+  
+  
+  
+  .formulario-cart{
+  display: grid;
+  grid-area: formulario-cart;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 0;
+  column-gap: 2.2em;
+  align-self: center;
+  margin-top: -0.8m;
+  position: relative;
+  bottom: 4.2em;
+  left: 42.6em;
+  }
+  
+  .numerito{
+  background-color: #ffffff;
+  border: .2em solid var(--dark-150);
+  grid-row-start: 1;
+  grid-row-end: -1;
+  width: 600%;
+  text-align: center;
+  padding-top:.5em;
+  position: relative;
+  left: -3.3em
+  }
+  
+  .flecha-abajo{
+  color: #FAFAFF;
+  grid-column-end: -1;
+  background-color:#FF3333;
+  width: 140%;
+  margin-top: .1em;
+  text-align: center;
+  }
+  
+  .flecha-arriba{
+  color: #FAFAFF;
+  grid-column-end: -1;
+  background-color:#FF3333;
+  width: 140%;
+  margin-bottom: .1em;
+  text-align: center;
+  }
+  
+  .titulo-principal-final{
+  font-size: 1.5em;
+  position: relative;
+  left: 45em;
+  }
+  
+  .titulo-principal-final h1{
+  position: relative;
+  right: -2.4em;
+  bottom: .2em;
+    }
+  
+  
+  
+  .linea-roja-final{
+  width: 10%;
+  height: 6px;
+  margin-left: .2em;
+  background-color: #FF3333;
+  position: relative;
+  right: -4.6em;
+  top:0;
+  }
+  
+  
+  .cuadro-resumen{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 40%;
+  background-color:var(--light-bg-solid);
+  border: .2em solid var(--dark-150);
+  border-radius: 12px;
+  margin: 0 0 1em 0;
+  padding: .5em 0 1em 1em;
+  position: relative;
+  left: 104em;
+  row-gap:.6em;
+  }
+  
+  .izquierda{
+    grid-template-rows: 20% 20% 20% 40%;
+    display: grid;
+    justify-items: start;
+    row-gap:1em;
+    align-items: center;
+    margin: 1em 2em 1em 2em;
+    } 
+    
+  
+    
+  .derecha{
+    grid-template-rows: 20% 20% 20% 40%;
+    display: grid;
+    justify-items: end;
+    row-gap:1em;
+    align-items: center;
+    margin: 1em 2em 1em 2em;
+    } 
+  
+  
+  .linea-roja-cuadro{
+    width: 93%;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  height: 3px;
+  background-color: #FF3333;
+  position: relative;
+  left: 2em;
+  bottom: 2.2em;
+  }
+      
+  
+  .boton-pagar{
+  width: 40%;
+  height: 2.5em;
+  color: #FAFAFF;
+  background-color: #FF3333;
+  margin-bottom: 10em;
+  text-align: center;
+  position: relative;
+  left: 104em;
+  padding-top: .6em;
+  }  
+  
+  
+  
+  h3 {
+  margin-left: -0.3em;
+  }
+  
+  .numerito-compra{
+  width: 4%;
+  color: #FAFAFF;
+  background-color: #FF3333;
+  border-radius: 50%;
+  font-size: 50%;
+  text-align: center;
+  position: relative;
+  left: 10em;
+  top: .8em;
+  padding-bottom: .3em;
+  }
+      }
+  
+  
+  
