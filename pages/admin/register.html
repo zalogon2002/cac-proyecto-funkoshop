@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Register | Funkoshop</title>
     <link rel="stylesheet" href="../../css/index.css" />
-    <link rel="icon" type="image/x-icon" href="../../img/fav.png">
+    <link rel="stylesheet" href="../../css/login-register.css" />
+    <link rel="icon" type="image/x-icon" href="../../img/fav.png" />
   </head>
   <body>
     <header>
@@ -43,11 +44,21 @@
         <div>
           <div class="login-item">
             <label for="nombre" class="admin-label-text">Nombre:</label>
-            <input type="text" placeholder="John" class="admin-input-line" />
+            <input
+              type="text"
+              placeholder="John"
+              class="admin-input-line"
+              id="nombre"
+            />
           </div>
           <div class="login-item">
             <label for="apellido" class="admin-label-text">Apellido:</label>
-            <input type="text" placeholder="Doe" class="admin-input-line" />
+            <input
+              type="text"
+              placeholder="Doe"
+              class="admin-input-line"
+              id="apellido"
+            />
           </div>
           <div class="login-item">
             <label for="email" class="admin-label-text">Email:</label>
@@ -55,6 +66,8 @@
               type="email"
               placeholder="johndoe@correo.com"
               class="admin-input-line"
+              id="email"
+              autocomplete="email"
             />
           </div>
           <div class="login-item">
@@ -63,16 +76,18 @@
               type="password"
               placeholder="********"
               class="admin-input-line"
+              id="password"
             />
           </div>
           <div class="login-item">
-            <label for="password" class="admin-label-text"
+            <label for="password-2" class="admin-label-text"
               >Reingrese contraseña:</label
             >
             <input
               type="password"
               placeholder="********"
               class="admin-input-line"
+              id="password-2"
             />
           </div>
           <div class="register-item-label">
