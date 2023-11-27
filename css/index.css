@@ -743,12 +743,15 @@ aside input[type="checkbox"] {
   margin-bottom: var(--spacing-12);
 }
 
-/* .agregarCarrito, .min-max  */
-input[type="text"] {
+input .agregarCarrito [type="text"] {
   text-align: left;
 }
 
-/*  CARRITO  */
+.item__input,
+#max,
+#min {
+  text-align: center;
+}
 
 /*  Estilos Create  */
 
