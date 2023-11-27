@@ -59,14 +59,16 @@
             edición limitada.
           </p>
           <p class="item__price">$1799,99</p>
-          <section class="agregarCarrito">
-            <input type="text" placeholder="0" />
+          <div class="agregarCarrito">
+            <input class="item__input" type="text" placeholder="0" name="quantity" id="quantity" />
             <div>
-              <button>+</button>
-              <button>-</button>
+              <button id="add" type="button" class="btn_quantity">+</button>
+              <button id="Subtract" type="button" class="btn_quantity">
+                -
+              </button>
             </div>
             <button type="submit">Agregar al carrito</button>
-          </section>
+          </div>
           <p class="card-item__promo">
             <a href="">Ver medios de pago disponibles</a> - 3 CUOTAS SIN INTERES
           </p>
@@ -202,5 +204,6 @@
         },
       }).mount();
     </script>
+    <script src="../../js/item.js"></script>
   </body>
 </html>
