@@ -221,27 +221,12 @@ header {
   font-weight: 500;
 }
 
-/* COLLECCIONES */
+/* COLECCIONES */
 
 .coleccion {
-  display: flex;
-  flex-direction: column;
-  text-align: start;
-  align-items: flex-start;
   padding: var(--spacing-16) 0;
   margin-left: var(--spacing-20);
   margin-right: var(--spacing-20);
-}
-
-.coleccion:nth-child(2) .coleccion__cover {
-  order: -1;
-}
-
-.coleccion__content {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-24);
-  align-items: start;
 }
 
 .coleccion__title {
@@ -272,6 +257,22 @@ header {
 .coleccion__link:hover {
   background-color: var(--primary-900);
 }
+.coleccion__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-24);
+  align-items: center;
+}
+
+.coleccion:nth-child(2) .coleccion__cover {
+  order: -1;
+}
+
+.coleccion__title {
+  font-family: var(--alternative-font);
+  font-size: var(--font-display);
+  font-weight: 500;
+}
 
 @media (min-width: 768px) {
   .coleccion {
@@ -280,15 +281,10 @@ header {
     text-align: start;
     align-items: center;
     padding: var(--spacing-16);
-    /*margin-left: 0;
-  margin-right: 0;*/
   }
-}
-
-.coleccion__title {
-  font-family: var(--alternative-font);
-  font-size: var(--font-display);
-  font-weight: 500;
+  .coleccion__content {
+    align-items: start;
+  }
 }
 
 /* SLIDER */
@@ -313,6 +309,7 @@ button.glide__arrow.glide__arrow--right {
     flex-direction: column;
     gap: var(--spacing-36);
     margin: var(--spacing-68) auto;
+    justify-content: center;
   }
 
   .slider__title {
@@ -399,7 +396,7 @@ button.glide__arrow.glide__arrow--right {
   .slider__title {
     font-family: var(--alternative-font);
     font-size: var(--font-display);
-    text-align: left;
+    text-align: center;
     text-transform: uppercase;
   }
 
@@ -407,6 +404,12 @@ button.glide__arrow.glide__arrow--right {
     display: flex;
     gap: var(--spacing-12);
     flex-direction: row;
+  }
+
+  article .card-item {
+    display: grid;
+    justify-content: space-around;
+    padding: var(--spacing-12);
   }
 
   .card-item__cover {
@@ -471,6 +474,12 @@ button.glide__arrow.glide__arrow--right {
   }
 }
 
+@media (min-width: 1024px) {
+  .slider__title {
+    text-align: left;
+  }
+}
+
 /* ANIMACIONES */
 @keyframes fade {
   0% {
@@ -531,9 +540,11 @@ footer {
 }
 
 /* INDEX */
-.main-container {
-  display: grid;
-  justify-items: center;
+@media (min-width: 1024px) {
+  .main-container {
+    display: grid;
+    justify-items: center;
+  }
 }
 
 /* SHOP STYLES */
