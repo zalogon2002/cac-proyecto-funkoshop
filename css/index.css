@@ -681,12 +681,13 @@ aside input[type="checkbox"] {
 }
 
 /* ITEM */
-
-.item-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  padding: var(--spacing-16) 0;
+@media (min-width: 768px) {
+  .item-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: var(--spacing-16) 0;
+  }
 }
 
 .item__licence {
@@ -762,6 +763,14 @@ input .agregarCarrito [type="text"] {
 #max,
 #min {
   text-align: center;
+}
+
+@media (min-width: 320px) {
+  .item-container {
+    display: grid;
+    justify-content: center;
+    padding: 28px;
+  }
 }
 
 /*  Estilos Create  */
