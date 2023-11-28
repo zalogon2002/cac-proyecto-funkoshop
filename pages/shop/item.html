@@ -60,7 +60,13 @@
           </p>
           <p class="item__price">$1799,99</p>
           <div class="agregarCarrito">
-            <input class="item__input" type="text" placeholder="0" name="quantity" id="quantity" />
+            <input
+              class="item__input"
+              type="text"
+              placeholder="0"
+              name="quantity"
+              id="quantity"
+            />
             <div>
               <button id="add" type="button" class="btn_quantity">+</button>
               <button id="Subtract" type="button" class="btn_quantity">
@@ -195,10 +201,10 @@
         perView: 3,
         gap: 30,
         breakpoints: {
-          991: {
+          768: {
             perView: 2,
           },
-          768: {
+          320: {
             perView: 1,
           },
         },
