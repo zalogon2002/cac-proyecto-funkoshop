@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EDIT | FunkoShop</title>
+    <link rel="stylesheet" href="../../css/index.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar container">
+        <picture class="navbar__logo">
+          <a href="/index.html">
+            <img
+              src="/img/branding/logo_light_horizontal.svg"
+              alt="logotipo Funkoshop"/>
+          </a>
+        </picture>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a class="navbar__link" href="/pages/shop/shop.html">VER TIENDA</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="/pages/admin/admin.html">ADMIN</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="/index.html">SALIR</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-container">
+      <div class="edit container">
+        <form action="" method="post" enctype="application/x-www-form-urlencoded">
+          <h2 class="edit__tittle">EDITAR ITEM</h2>
+          <div class="categoria__licencia__edit">
+            <label for="categoria">Categoría:</label>
+              <select name="categoria" id="categoria">
+                <option value="">Seleccionar</option>
+                <option value="op1">Opción 1</option>
+                <option value="op2">Opción 2</option>
+                <option value="op3">Opción 3</option>
+              </select>
+
+            <label for="licencia">Licencia:</label>
+              <select name="licencia" id="licencia">
+                <option value="">Seleccionar</option>
+                <option value="licencia-op1">Opción 1</option>
+                <option value="licencia-op2">Opción 2</option>
+                <option value="licencia-op3">Opción 3</option>
+              </select>              
+          </div>
+
+          <div class="nombre__producto__edit">
+            <label for="producto">Nombre del producto:</label>
+              <input type="text" placeholder="BABY YODA BLUEBALL" />
+          </div>
+
+          <div class="descripcion__producto__edit">
+            <label for="mensaje"></label>
+            <textarea class="descripcion__producto__edit__text" name="mensaje" id="mensaje" cols="30" rows="10"
+              placeholder="Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, edición limitada.">
+            </textarea>
+          </div>
+
+          <div class="sku__precio__stock__edit">
+            <label for="sku">SKU:</label>
+              <input type="text" name="sku" id="sku" placeholder="NAR001012" />
+            <label for="precio">Precio:</label>
+              <input type="text" name="precio" id="precio" placeholder="$ 1.799,00"/>
+            <label for="stock">Stock:</label>
+              <input type="number" name="stock" id="stock" placeholder="10" />
+          </div>
+
+          <div class="descuento__cuotas__edit">
+            <label for="descuento">Descuento:</label>
+              <input type="number" name="descuento" id="descuento" placeholder="10%" />
+            <label for="cuotas">Cuotas</label>
+              <select name="cuotas" id="cuotas">
+                <option value="tres-cuotas">3 cuotas</option>
+                <option value="seis-cuotas">6 cuotas</option>
+                <option value="doce-cuotas">12 cuotas</option>
+              </select>
+          </div>
+
+          <div class="carga__imagenes__edit">
+            <label for="imagenes">Imágenes:</label>
+              <input type="file" name="imagenes" id="imagenes" placeholder="Elegir archivos"/>
+          </div>
+
+          <div class="frente__dorso container">
+            <article class="frente__dorso__content">
+              <img class="frente__dorso__img" src="/img/star-wars/baby-yoda-1.webp" alt="baby-yoda" />
+              <p class="frente__dorso__tittle">Frente</p>
+            </article>
+            <article class="frente__dorso__content">
+              <img class="frente__dorso__img" src="/img/pokemon/pikachu-box.webp" alt="caja-baby-yoda" />
+              <p class="frente__dorso__tittle">Dorso</p>
+            </article>            
+          </div>
+          <div class="edit__boton">
+            <button class="edit__boton__modificar" type="submit">Modificar Producto</button>
+          </div>          
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+        <nav class="navbar__footer container">
+          <ul class="navbar__footer__menu">
+            <li class="navbar__footer__item">
+              <a class="navbar__link" href="/pages/shop/shop.html">SHOP</a>
+            </li>
+            <li class="navbar__footer__item">
+              <a class="navbar__link" href="/pages/admin/register.html">REGISTRARSE</a>
+            </li>
+            <li class="navbar__footer__item">
+              <a class="navbar__link" href="pages/admin/login.html">INGRESAR</a>
+            </li>
+            <li class="navbar__footer__item">
+              <a class="navbar__link" href="/pages/contacto.html">CONTACTO</a>
+            </li>
+          </ul>
+          <picture>
+            <img src="/img/branding/isotype.svg" alt="Isotipo de FunkoShop" />
+          </picture>
+        </nav>
+       <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
+    </footer>
+  </body>
+</html>
