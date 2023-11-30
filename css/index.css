@@ -48,6 +48,7 @@
   --spacing-16: 1.6rem;
   --spacing-12: 1.2rem;
   --spacing-8: 0.8rem;
+  --spacing-4: 0.4rem;
 }
 
 *,
@@ -549,11 +550,12 @@ footer {
 
 /* SHOP STYLES */
 
+  /*    
 .shop-container {
   display: grid;
   align-items: start;
   grid-gap: 4rem 1rem;
-  /* grid-template-columns: 1fr repeat(3fr); */
+        grid-template-columns: 1fr repeat(3fr); 
   grid-template-rows: auto auto;
   padding-top: var(--spacing-68);
   row-gap: var(--spacing-12);
@@ -644,6 +646,7 @@ aside input[type="checkbox"] {
   border: 2px solid #30343f;
   margin: var(--spacing-12);
 }
+*/
 
 /* PAGINACIÓN */
 
